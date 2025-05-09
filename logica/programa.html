@@ -1,5 +1,15 @@
 <meta charset="UTF-8">
 <script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        pulaLinha();
+        document.write(texto);
+    }
+
+
     var ano = 2084;
     //alert("A idade do Valdivino é");
     document.write("A idade do Valdivino é "); //a partir do mundo JS consigo escrever no documento .html
@@ -19,8 +29,10 @@
     document.write(tabuada + " x 8 = " + tabuada*8 + "<br>");
     document.write(tabuada + " x 9 = " + tabuada*9 + "<br>");
     document.write(tabuada + " x 10 = " + tabuada*10 + "<br>");
-    
+    pulaLinha();
     var media = 10/3;
     document.writeln("A média é: " + media + "<br>");
+    pulaLinha();
     document.write("A média arredondada é: " + Math.round(media));
+    mostra("Teste 2");
 </script>
