@@ -5,7 +5,7 @@
     }
 
     function mostra(frase){
-        document.write(frase);
+        document.write(frase + "<br>");
     }
 
     var vitorias = parseInt(prompt("Quantas vezes seu time ganhou? "));
@@ -13,4 +13,13 @@
     var pontos = (vitorias*3) + empates;
     //alert("Seu time têm: " + pontos + " pontos no campeonato!");
     mostra("Seu time têm " + pontos + " pontos no campeonato!");
+    if(pontos > 28) {
+        mostra("Seu time está MELHOR que ano passado!");
+    }
+    if(pontos == 28){
+        mostra("Seu time está IGUAL ao ano passado!");
+    }
+    if(pontos < 28){
+        mostra("Seu time está PIOR que ano passado!")
+    }
 </script>
