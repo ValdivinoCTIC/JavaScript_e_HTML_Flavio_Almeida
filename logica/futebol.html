@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+    }
+
+    var vitorias = parseInt(prompt("Quantas vezes seu time ganhou? "));
+    var empates = parseInt(prompt("Quantas vezes seu time empatou? "));
+    var pontos = (vitorias*3) + empates;
+    //alert("Seu time têm: " + pontos + " pontos no campeonato!");
+    mostra("Seu time têm " + pontos + " pontos no campeonato!");
+</script>
