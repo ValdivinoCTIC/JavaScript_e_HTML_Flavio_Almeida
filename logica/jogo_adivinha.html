@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+    }
+
+    function calculaIMC(peso, altura){
+        return peso / (altura * altura);
+    }
+    var numeroPensado = Math.round(Math.random()*10);
+
+    var numeroChutado = parseInt(prompt("Chute um número de 0 a 10:"));
+    if(numeroChutado == numeroPensado){
+        mostra(numeroPensado + ", Você acertou!")    
+    }else{
+        mostra(numeroPensado + ", Você errou!");
+    }
+ 
+</script>
