@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha(){
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+    }
+
+
+    var numeroPensado = Math.round(Math.random()*10);
+  
+    var tentativas = 1;
+while(tentativas <=3){
+      var numeroChutado = parseInt(prompt("Chute um número de 0 a 10:"));
+    if(numeroChutado == numeroPensado){
+        mostra(numeroPensado + ", Você acertou!");
+        //tentativas = 3; 
+        break;   
+    }else{
+        mostra(numeroPensado + ", Você errou!");
+    }
+    tentativas+=1;
+}
+    
+ 
+</script>
